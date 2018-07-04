@@ -1,0 +1,28 @@
+friend---------------------
+my_idx		(int)
+friend_idx	(int)
+
+talk_history---------------
+msg_idx		(int)
+room_idx	(int)
+sender_idx	(int)
+content		(varchar 4096)
+time		(datetime)
+
+user-----------------------
+idx		(int)
+id		(varchar 32)
+password	(varchar 32)
+name		(varchar 32)
+auth_key	(varcher 64)
+reg_auth	(tinyint 1)
+pw_auth		(tinyint 1)
+email		(varchar 128)
+phone		(varcher 32)
+reg_date	(date)
+
+room-----------------------
+room_idx	(int)
+user_idx	(int)
+
+

@@ -1,0 +1,4 @@
+set sysroot /Users/wh2per/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-emulator.core
+set debug-file-directory /Users/wh2per/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-emulator.core/usr/lib/debug
+set solib-search-path /Users/wh2per/workspace/ChattingApp (1)/Debug
+dir /Users/wh2per/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-emulator.core/usr/src/debug

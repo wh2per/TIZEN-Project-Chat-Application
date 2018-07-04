@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<properties>
+    <shape>square</shape>
+    <storyboard>
+        <view id="id_find_view" location_x="2115" location_y="10"/>
+        <view id="main_view" location_x="4575" location_y="10"/>
+        <view id="email_certify_view" location_x="7035" location_y="10"/>
+        <view id="signup_view" location_x="1295" location_y="10"/>
+        <view id="chatting_room_view" location_x="6215" location_y="10"/>
+        <view id="add_friend_view" location_x="5395" location_y="10"/>
+        <view id="pw_setting_view" location_x="3755" location_y="10"/>
+        <view id="view1" location_x="475" location_y="10"/>
+        <view id="view2" location_x="3209" location_y="2029"/>
+        <view id="pw_find_view" location_x="2935" location_y="10"/>
+    </storyboard>
+</properties>

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document>
+	<mscreen>
+		<configuration id="config1" name="common" type="common"
+			orientation="portrait" device="HD"></configuration>
+	</mscreen>
+	<views startup="view1">
+		<view id="view1" indicator="true" screen_orientation="full_sensor"
+			type="view">
+			<grid align_h="fill" vsize_w="1000" align_v="fill" visible="true"
+				weight_v="1" id="grid1" weight_h="1" vsize_h="1000">
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="true" pack_h="64" scroll="false" weight_h="1"
+					single_line="true" align_h="fill" password="false"
+					file_text_format="plain_utf8" pack_w="442" disable="false" pack_x="217"
+					pack_y="444" id="id_entry" text=""></entry>
+				<image resizable_up="true" resizable_down="true" align_v="fill"
+					visible="true" src="" weight_v="1" pack_h="321" weight_h="1"
+					align_h="fill" aspect_fixed="false" pack_w="815" pack_x="83"
+					pack_y="49" no_scale="false" id="logo_square" fill_outside="false"></image>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="153"
+					weight_h="1" align_h="fill" pack_w="254" disable="false" pack_x="700"
+					pack_y="446" style="default" id="login_button" text="Login">
+					<event signal="clicked" function_name="view1_login_button_onclicked"></event>
+				</button>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="true" pack_h="64" scroll="false" weight_h="1"
+					single_line="true" align_h="fill" password="true" file_text_format="plain_utf8"
+					pack_w="442" disable="false" pack_x="216" pack_y="534" id="pw_entry"
+					text=""></entry>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="60" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="185" disable="false" pack_x="15" pack_y="442"
+					id="id_label" text="ID"></label>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="60" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="185" disable="false" pack_x="14" pack_y="534"
+					id="pw_label" text="PW"></label>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="67"
+					weight_h="1" align_h="fill" pack_w="396" disable="false" pack_x="65"
+					pack_y="632" style="default" id="id_search_button" text="Search Id">
+					<event signal="clicked" function_name="view1_id_search_button_onclicked"></event>
+				</button>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="67"
+					weight_h="1" align_h="fill" pack_w="396" disable="false" pack_x="481"
+					pack_y="632" style="default" id="pw_search_button" text="Search Password">
+					<event signal="clicked" function_name="view1_pw_search_button_onclicked"></event>
+				</button>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="67"
+					weight_h="1" align_h="fill" pack_w="390" disable="false" pack_x="65"
+					pack_y="718" style="default" id="signup_button" text="Sign  - up">
+					<event signal="clicked" function_name="view1_signup_button_onclicked"></event>
+				</button>
+				<check align_v="fill" visible="true" weight_v="1" pack_h="67"
+					weight_h="1" align_h="fill" pack_w="396" disable="false" pack_x="481"
+					pack_y="718" style="default" id="autologin_check" text="auto-login"
+					state="false"></check>
+			</grid>
+		</view>
+		<view indicator="true" screen_orientation="full_sensor" id="signup_view"
+			type="view">
+
+			<grid align_h="fill" vsize_w="1000" align_v="fill" visible="true"
+				weight_v="1" id="grid1" weight_h="1" vsize_h="1000">
+				<image resizable_up="true" resizable_down="true" align_v="fill"
+					visible="true" src="" weight_v="1" pack_h="321" weight_h="1"
+					align_h="fill" aspect_fixed="false" pack_w="815" pack_x="83"
+					pack_y="49" no_scale="false" id="logo_rectangle" fill_outside="false"></image>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="40" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="204" disable="false" pack_x="65" pack_y="400"
+					id="signup_id_label" text="ID"></label>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="40" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="204" disable="false" pack_x="65" pack_y="470"
+					id="signup_pw_label" text="PW"></label>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="40" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="204" disable="false" pack_x="65" pack_y="540"
+					id="signup_pw2_label" text="PW again"></label>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="40" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="204" disable="false" pack_x="65" pack_y="610"
+					id="signup_name_label" text="Name"></label>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="40" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="204" disable="false" pack_x="65" pack_y="680"
+					id="signup_phone_label" text="Phone Number"></label>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="true" pack_h="40" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="false"
+					file_text_format="plain_utf8" pack_w="419" disable="false" pack_x="332"
+					pack_y="400" id="signup_id_entry" text=""></entry>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="true" pack_h="40" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="true"
+					file_text_format="plain_utf8" pack_w="419" disable="false" pack_x="332"
+					pack_y="470" id="signup_pw_entry" text=""></entry>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="true" pack_h="40" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="true"
+					file_text_format="plain_utf8" pack_w="419" disable="false" pack_x="332"
+					pack_y="540" id="signup_pw2_entry" text=""></entry>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="true" pack_h="40" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="false"
+					file_text_format="plain_utf8" pack_w="419" disable="false" pack_x="332"
+					pack_y="610" id="signup_name_entry" text=""></entry>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="true" pack_h="40" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="false"
+					file_text_format="plain_utf8" pack_w="419" disable="false" pack_x="332"
+					pack_y="680" id="signup_phone_entry" text=""></entry>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="40"
+					weight_h="1" align_h="fill" pack_w="182" disable="false" pack_x="781"
+					pack_y="400" style="default" id="signup_id_check_button" text="Check">
+					<event signal="clicked" function_name="signup_view_signup_id_check_button_onclicked" />
+				</button>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="40"
+					weight_h="1" align_h="fill" pack_w="182" disable="false" pack_x="780"
+					pack_y="680" style="default" id="signup_phone_check_button" text="Check">
+					<event signal="clicked"
+						function_name="signup_view_signup_phone_check_button_onclicked" />
+				</button>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="68"
+					weight_h="1" align_h="fill" pack_w="370" disable="false" pack_x="304"
+					pack_y="770" style="default" id="email_certify_button" text="Email-certify">
+					<event signal="clicked" function_name="signup_view_signup_button_onclicked" />
+				</button>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="40"
+					weight_h="1" align_h="fill" pack_w="182" disable="false" pack_x="781"
+					pack_y="540" style="default" id="signup_pw_check_button" text="Check">
+					<event signal="clicked" function_name="signup_view_signup_pw_check_button_onclicked" />
+				</button>
+
+
+			</grid>
+		</view>
+		<view indicator="true" screen_orientation="full_sensor" id="id_find_view"
+			type="view">
+			<grid align_h="fill" vsize_w="1000" align_v="fill" visible="true"
+				weight_v="1" id="grid1" weight_h="1" vsize_h="1000">
+				<image resizable_up="true" resizable_down="true" align_v="fill"
+					visible="true" src="" weight_v="1" pack_h="321" weight_h="1"
+					align_h="fill" aspect_fixed="false" pack_w="815" pack_x="83"
+					pack_y="49" no_scale="false" id="logo_square" fill_outside="false"></image>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="70" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="220" disable="false" pack_x="80" pack_y="480"
+					id="id_find_id_label" text="Id"></label>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="70" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="220" disable="false" pack_x="80" pack_y="600"
+					id="id_find_phone_label" text="Phone"></label>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="true" pack_h="70" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="false"
+					file_text_format="plain_utf8" pack_w="510" disable="false" pack_x="380"
+					pack_y="480" id="id_find_id_entry" text=""></entry>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="true" pack_h="70" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="false"
+					file_text_format="plain_utf8" pack_w="510" disable="false" pack_x="380"
+					pack_y="600" id="id_find_phone_entry" text=""></entry>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="75"
+					weight_h="1" align_h="fill" pack_w="529" disable="false" pack_x="229"
+					pack_y="778" style="default" id="id_find_button" text="Find ID">
+					<event signal="clicked" function_name="id_find_view_id_find_button_onclicked"></event>
+				</button>
+			</grid>
+		</view>
+		<view indicator="true" screen_orientation="full_sensor" id="pw_find_view"
+			type="view">
+			<grid align_h="fill" vsize_w="1000" align_v="fill" visible="true"
+				weight_v="1" id="grid1" weight_h="1" vsize_h="1000">
+				<image resizable_up="true" resizable_down="true" align_v="fill"
+					visible="true" src="" weight_v="1" pack_h="321" weight_h="1"
+					align_h="fill" aspect_fixed="false" pack_w="815" pack_x="83"
+					pack_y="49" no_scale="false" id="logo_square" fill_outside="false"></image>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="true" pack_h="40" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="false"
+					file_text_format="plain_utf8" pack_w="420" disable="false" pack_x="350"
+					pack_y="420" id="pw_find_id_entry" text=""></entry>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="40" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="200" disable="false" pack_x="83" pack_y="420"
+					id="pw_find_id_label" text="ID"></label>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="true" pack_h="40" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="false"
+					file_text_format="plain_utf8" pack_w="420" disable="false" pack_x="350"
+					pack_y="500" id="pw_find_name_entry" text=""></entry>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="40" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="200" disable="false" pack_x="83" pack_y="500"
+					id="pw_find_name_label" text="Name"></label>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="false" pack_h="40" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="false"
+					file_text_format="plain_utf8" pack_w="420" disable="false" pack_x="350"
+					pack_y="580" id="pw_find_quiz_entry" text="what is your mother`s name?"></entry>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="40" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="200" disable="false" pack_x="83" pack_y="580"
+					id="pw_find_quiz_label" text="Quiz"></label>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="true" pack_h="40" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="false"
+					file_text_format="plain_utf8" pack_w="420" disable="false" pack_x="350"
+					pack_y="660" id="pw_find_answer_entry" text=""></entry>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="40" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="200" disable="false" pack_x="83" pack_y="660"
+					id="pw_find_answer_label" text="Answer"></label>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="75"
+					weight_h="1" align_h="fill" pack_w="529" disable="false" pack_x="229"
+					pack_y="778" style="default" id="pw_find_button" text="Find Password">
+					<event signal="clicked" function_name="pw_find_view_pw_find_button_onclicked"></event>
+				</button>
+			</grid>
+		</view>
+		<view indicator="true" screen_orientation="full_sensor" id="pw_setting_view"
+			type="view">
+			<grid align_h="fill" vsize_w="1000" align_v="fill" visible="true"
+				weight_v="1" id="grid1" weight_h="1" vsize_h="1000">
+				<image resizable_up="true" resizable_down="true" align_v="fill"
+					visible="true" src="" weight_v="1" pack_h="321" weight_h="1"
+					align_h="fill" aspect_fixed="false" pack_w="815" pack_x="83"
+					pack_y="49" no_scale="false" id="logo_square" fill_outside="false"></image>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="false" pack_h="40" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="false"
+					file_text_format="plain_utf8" pack_w="420" disable="false" pack_x="350"
+					pack_y="420" id="pw_setting_id_entry" text=""></entry>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="40" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="200" disable="false" pack_x="83" pack_y="420"
+					id="pw_setting_id_label" text="ID"></label>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="true" pack_h="40" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="true"
+					file_text_format="plain_utf8" pack_w="420" disable="false" pack_x="350"
+					pack_y="580" id="pw_setting_pw_entry" text=""></entry>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="40" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="200" disable="false" pack_x="83" pack_y="580"
+					id="pw_setting_pw_label" text="PW"></label>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="true" pack_h="40" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="true"
+					file_text_format="plain_utf8" pack_w="420" disable="false" pack_x="350"
+					pack_y="660" id="pw_setting_pw2_entry" text=""></entry>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="40" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="200" disable="false" pack_x="83" pack_y="660"
+					id="pw_setting_pw2_label" text="PW again"></label>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="49"
+					weight_h="1" align_h="fill" pack_w="175" disable="false" pack_x="814"
+					pack_y="652" style="default" id="pw_setting_check_button" text="Check">
+					<event signal="clicked"
+						function_name="pw_setting_view_pw_setting_check_button_onclicked"></event>
+				</button>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="75"
+					weight_h="1" align_h="fill" pack_w="529" disable="false" pack_x="229"
+					pack_y="778" style="default" id="pw_setting_button" text="Set Password">
+					<event signal="clicked" function_name="pw_setting_view_pw_setting_button_onclicked"></event>
+				</button>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="false" pack_h="40" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="false"
+					file_text_format="plain_utf8" pack_w="420" disable="false" pack_x="350"
+					pack_y="500" id="pw_setting_name_entry" text=""></entry>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="40" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="200" disable="false" pack_x="83" pack_y="500"
+					id="pw_setting_name_label" text="Name"></label>
+			</grid>
+		</view>
+		<view indicator="true" screen_orientation="full_sensor" id="main_view"
+			type="view">
+			<grid align_h="fill" vsize_w="1000" align_v="fill" visible="true"
+				weight_v="1" id="grid1" weight_h="1" vsize_h="1000">
+				<list scrollbar_v="auto" align_v="fill" visible="true"
+					weight_v="1" pack_h="670" weight_h="1" mode="scroll" scrollbar_h="auto"
+					align_h="fill" select_mode="default" multi_select="false" pack_w="879"
+					disable="false" pack_x="68" pack_y="153" id="list1" direction="vertical">
+
+
+
+
+
+				</list>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="50" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="190" disable="false" pack_x="55" pack_y="75"
+					id="main_find_label" text="find"></label>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="true" pack_h="50" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="false"
+					file_text_format="plain_utf8" pack_w="480" disable="false" pack_x="282"
+					pack_y="75" id="main_find_entry" text="Entry"></entry>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="50"
+					weight_h="1" align_h="fill" pack_w="190" disable="false" pack_x="780"
+					pack_y="75" style="default" id="main_search_button" text="Search"></button>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="100"
+					weight_h="1" align_h="fill" pack_w="300" disable="false" pack_x="649"
+					pack_y="875" style="default" id="add_friend_button" text="Add Friend">
+					<event signal="clicked" function_name="main_view_add_friend_button_onclicked"></event>
+				</button>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="100"
+					weight_h="1" align_h="fill" pack_w="300" disable="false" pack_x="14"
+					pack_y="875" style="default" id="main_button" text="Main">
+					<event signal="clicked" function_name="main_view_main_button_onclicked"></event>
+				</button>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="100"
+					weight_h="1" align_h="fill" pack_w="300" disable="false" pack_x="331"
+					pack_y="875" style="default" id="chatting_room_button" text="Room">
+					<event signal="clicked" function_name="main_view_chatting_room_button_onclicked"></event>
+				</button>
+			</grid>
+			<event signal="uib,view,create" function_name="main_view_onuib_view_create"></event>
+		</view>
+		<view indicator="true" screen_orientation="full_sensor" id="add_friend_view"
+			type="view">
+			<grid align_h="fill" vsize_w="1000" align_v="fill" visible="true"
+				weight_v="1" id="grid1" weight_h="1" vsize_h="1000">
+				<image resizable_up="true" resizable_down="true" align_v="fill"
+					visible="true" src="" weight_v="1" pack_h="321" weight_h="1"
+					align_h="fill" aspect_fixed="false" pack_w="815" pack_x="83"
+					pack_y="49" no_scale="false" id="logo_square" fill_outside="false"></image>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="40" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="200" disable="false" pack_x="83" pack_y="420"
+					id="add_friend_label" text="ID"></label>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="true" pack_h="40" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="false"
+					file_text_format="plain_utf8" pack_w="330" disable="false" pack_x="349"
+					pack_y="420" id="add_friend_entry" text=""></entry>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="40"
+					weight_h="1" align_h="fill" pack_w="181" disable="false" pack_x="747"
+					pack_y="420" style="default" id="add_friend_search_button" text="Search">
+					<event signal="clicked"
+						function_name="add_friend_view_add_friend_search_button_onclicked"></event>
+				</button>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="false" pack_h="55" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="false"
+					file_text_format="plain_utf8" pack_w="600" disable="false" pack_x="189"
+					pack_y="545" id="entry1" text="Entry"></entry>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="95"
+					weight_h="1" align_h="fill" pack_w="414" disable="false" pack_x="276"
+					pack_y="680" style="default" id="add_friend_add_button" text="Add Friend">
+					<event signal="clicked"
+						function_name="add_friend_view_add_friend_add_button_onclicked"></event>
+				</button>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="100"
+					weight_h="1" align_h="fill" pack_w="300" disable="false" pack_x="14"
+					pack_y="875" style="default" id="main_button" text="Main">
+					<event signal="clicked" function_name="add_friend_view_main_button_onclicked"></event>
+				</button>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="100"
+					weight_h="1" align_h="fill" pack_w="300" disable="false" pack_x="331"
+					pack_y="875" style="default" id="chatting_room_button" text="Room">
+					<event signal="clicked"
+						function_name="add_friend_view_chatting_room_button_onclicked"></event>
+				</button>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="100"
+					weight_h="1" align_h="fill" pack_w="300" disable="false" pack_x="649"
+					pack_y="875" style="default" id="add_friend_button" text="Add">
+					<event signal="clicked" function_name="add_friend_view_add_friend_button_onclicked"></event>
+				</button>
+			</grid>
+		</view>
+		<view indicator="true" screen_orientation="full_sensor" id="chatting_room_view"
+			type="view">
+
+			<grid align_h="fill" vsize_w="1000" align_v="fill" visible="true"
+				weight_v="1" id="grid1" weight_h="1" vsize_h="1000">
+				<list scrollbar_v="auto" align_v="fill" visible="true"
+					weight_v="1" pack_h="670" weight_h="1" mode="scroll" scrollbar_h="auto"
+					align_h="fill" select_mode="default" multi_select="false" pack_w="879"
+					disable="false" pack_x="56" pack_y="147" id="list1" direction="vertical">
+
+
+
+
+
+				</list>
+
+
+				<button align_v="fill" visible="true" weight_v="1" pack_h="80"
+					weight_h="1" align_h="fill" pack_w="300" disable="false" pack_x="342"
+					pack_y="39" style="default" id="make_room_button" text="Make Room">
+					<event signal="clicked" function_name="chatting_room_view_make_room_button_onclicked"></event>
+				</button>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="100"
+					weight_h="1" align_h="fill" pack_w="300" disable="false" pack_x="649"
+					pack_y="875" style="default" id="add_friend_button" text="Add Friend">
+					<event signal="clicked"
+						function_name="chatting_room_view_add_friend_button_onclicked"></event>
+				</button>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="100"
+					weight_h="1" align_h="fill" pack_w="300" disable="false" pack_x="14"
+					pack_y="875" style="default" id="main_button" text="Main">
+					<event signal="clicked" function_name="chatting_room_view_main_button_onclicked"></event>
+				</button>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="100"
+					weight_h="1" align_h="fill" pack_w="300" disable="false" pack_x="331"
+					pack_y="875" style="default" id="chatting_room_button" text="Room">
+					<event signal="clicked"
+						function_name="chatting_room_view_chatting_room_button_onclicked"></event>
+				</button>
+			</grid>
+			<event signal="uib,view,create" function_name="chatting_room_view_onuib_view_create"></event>
+		</view>
+		<view indicator="true" screen_orientation="full_sensor" id="email_certify_view"
+			type="view">
+			<grid align_h="fill" vsize_w="1000" align_v="fill" visible="true"
+				weight_v="1" id="grid1" weight_h="1" vsize_h="1000">
+				<image resizable_up="true" resizable_down="true" align_v="fill"
+					visible="true" src="" weight_v="1" pack_h="321" weight_h="1"
+					align_h="fill" aspect_fixed="false" pack_w="815" pack_x="83"
+					pack_y="49" no_scale="false" id="logo_square" fill_outside="false"></image>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="70" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="220" disable="false" pack_x="80" pack_y="480"
+					id="email_certify_email_label" text="Email"></label>
+				<label align_v="fill" visible="true" weight_v="1" line_wrap="none"
+					pack_h="70" weight_h="1" ellipsis="false" align_h="fill"
+					wrap_width="0" pack_w="220" disable="false" pack_x="80" pack_y="600"
+					id="email_certify_key_label" text="Key"></label>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="true" pack_h="70" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="false"
+					file_text_format="plain_utf8" pack_w="510" disable="false" pack_x="380"
+					pack_y="480" id="email_certify_email_entry" text=""></entry>
+				<entry context_menu="true" align_v="fill" visible="true" src=""
+					weight_v="1" editable="true" pack_h="70" scroll="false" weight_h="1"
+					single_line="false" align_h="fill" password="false"
+					file_text_format="plain_utf8" pack_w="510" disable="false" pack_x="380"
+					pack_y="600" id="email_certify_key_entry" text=""></entry>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="75"
+					weight_h="1" align_h="fill" pack_w="529" disable="false" pack_x="229"
+					pack_y="778" style="default" id="email_certify_signup_button" text="Sign - Up">
+					<event signal="clicked"
+						function_name="email_certify_view_email_certify_signup_button_onclicked"></event>
+				</button>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="70"
+					weight_h="1" align_h="fill" pack_w="170" disable="false" pack_x="800"
+					pack_y="480" style="default" id="email_certify_send_button" text="Send">
+					<event signal="clicked"
+						function_name="email_certify_view_email_certify_send_button_onclicked"></event>
+				</button>
+				<button align_v="fill" visible="true" weight_v="1" pack_h="70"
+					weight_h="1" align_h="fill" pack_w="170" disable="false" pack_x="800"
+					pack_y="600" style="default" id="email_certify_check_button" text="Check">
+					<event signal="clicked"
+						function_name="email_certify_view_email_certify_check_button_onclicked"></event>
+				</button>
+			</grid>
+		</view>
+		<view indicator="true" screen_orientation="full_sensor" id="chatting_view"
+			type="view">
+			<event signal="uib,view,create" function_name="chatting_view_onuib_view_create"></event>
+		</view>
+	</views>
+</document>
