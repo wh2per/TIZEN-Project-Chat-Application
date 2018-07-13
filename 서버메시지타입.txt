@@ -1,0 +1,135 @@
+서버 메시지 타입
+
+
+메시지보내기			MSG_TALK
+int type:			0
+int sender:			sender_index
+int etc:			시간정보
+int room_idx			방번호
+int msg_size			strlen(메시지)+4
+char* content_send_buffer	메시지내용+메시지인덱스(4byte)
+
+
+방만들기 결과			MSG_ROOMCREATE
+int type:			1
+int sender:			NULL
+int etc:			참여자 수
+int room_idx			배정된 방 번호
+int msg_size			참여자수*36
+char* content_send_buffer	참여자 목록(인덱스4byte+이름32byte)
+	
+
+회원가입 확인			MSG_USERREGISTER
+int type:			2
+int sender:			NULL
+int etc:			error_code
+int room_idx			NULL	
+int msg_size			0
+char* content_send_buffer	NULL
+
+
+로그인확인 			MSG_LOGIN
+int type:			3
+int sender:			sender_index
+int etc:			error_code
+int room_idx			NULL
+int msg_size			0
+char* content_send_buffer	NULL
+
+
+친구정보(이름)			MSG_FRIENDINFO
+int type:			4
+int sender:			NULL
+int etc:			친구수
+int room_idx			NULL
+int msg_size			36*친구수
+char* content_send_buffer	친구idx+친구 이름
+
+
+친구추가			MSG_FRIENDADD
+int type:			5
+int sender:			NULL
+int etc:			error_code
+int room_idx			NULL
+int msg_size			0
+char* content_send_buffer	NULL
+
+
+대화히스토리요청		MSG_HISTORY
+int type:			6
+int sender:			msg_sender_idx
+int etc:			timestamp
+int room_idx			room_idx
+int msg_size			strlen(메시지)+4
+char* content_send_buffer	메시지내용+메시지인덱스(4byte)
+
+
+방 퇴장 요청			MSG_ROOMEXIT
+int type			7
+int sender:			NULL
+int etc:			errorcode
+int room_idx:			room_idx
+int msg_size			0
+char* content_send_buffer	NULL
+
+
+방 안에서 유저 추가		MSG_ROOMUSERADD
+int type			8
+int sender:			NULL
+int etc:			참여자 수
+int room_idx:			room_idx
+int msg_size			참여자수*36
+char* content_send_buffer	참여자 목록(인덱스4byte+이름32byte)
+
+아이디 찾기			MSG_IDSEARCH
+int type			9
+int sender			NULL
+int etc				errorcode
+int room_idx			NULL
+int msg_size			32
+char* content_send_buffer	찾을사람id
+
+
+비밀번호 찾기			MSG_PWSEARCH
+int type			10
+int sender			NULL
+int etc				errorcode
+int room_idx			NULL
+int msg_size			NULL	
+char* content_send_buffer	NULL
+
+
+아이디 중복확인			MSG_IDDUPLICATE
+int type			11
+int sender			NULL
+int etc				errorcode
+int room_idx			NULL
+int msg_size			NULL
+char* content_send_buffer	NULL
+
+
+비밀번호 재설정			MSG_PWRESET
+int type			12
+int sender			NULL
+int etc				errorcode
+int room_idx			NULL
+int msg_size			NULL
+char* content_send_buffer	NULL
+
+
+인증키 요청			MSG_AUTHREQUEST
+int type			13
+int sender			NULL
+int etc				errorcode
+int room_idx			NULL
+int msg_size			NULL
+char* content_send_buffer	NULL			(email 보내줄것)
+
+
+인증키 확인			MSG_AUTHCHECK
+int type			14
+int sender			NULL
+int etc				errorcode
+int room_idx			NULL
+int msg_size			NULL
+char* content_send_buffer	NULL

@@ -1,0 +1,136 @@
+클라이언트 메시지 타입
+
+
+메시지보내기			MSG_TALK
+int type:			0
+int sender:			my_index
+int etc:			시간정보
+int room_idx			방번호
+int msg_size			strlen(메시지)-1
+char* content_send_buffer	메시지내용
+
+
+방만들기			MSG_ROOMCREATE
+int type:			1
+int sender:			my_index
+int etc:			참여자 수
+int room_idx			NULL
+int msg_size			참여자수*4
+char* content_send_buffer	참여자 목록
+
+
+회원가입 			MSG_USERREGISTER
+int type:			2
+int sender:			NULL
+int etc:			NULL	
+int room_idx			NULL	
+int msg_size			256
+char* content_send_buffer	아이디32byte+패스워드32byte+이름32byte+이메일128byte+전화번호32byte
+
+
+로그인요청 			MSG_LOGIN
+int type:			3
+int sender:			NULL
+int etc:			my_sock_info
+int room_idx			NULL
+int msg_size			64
+char* content_send_buffer	아이디, 패스워드
+
+
+친구목록요청			MSG_FRIENDINFO
+int type:			4
+int sender:			my_index
+int etc:			NULL
+int room_idx			NULL
+int msg_size			0
+char* content_send_buffer	NULL
+
+
+친구추가			MSG_FRIENDADD
+int type:			5
+int sender:			my_index
+int etc:			NULL
+int room_idx			NULL
+int msg_size			32
+char* content_send_buffer	추가할 친구 id
+
+
+대화히스토리요청		MSG_HISTORY
+int type:			6
+int sender:			my_index
+int etc:			last_message_idx
+int room_idx			room_idx
+int msg_size			0
+char* content_send_buffer	NULL
+
+
+방 퇴장 요청			MSG_ROOMEXIT
+int type			7
+int sender:			my_index
+int etc:			NULL
+int room_idx:			room_idx
+int msg_size			0
+char* content_send_buffer	NULL
+
+
+방 안에서 유저 추가		MSG_ROOMUSERADD
+int type			8
+int sender:			my_index
+int etc:			추가할 사람 수
+int room_idx:			room_idx
+int msg_size			4*etc
+char* content_send_buffer	추가할 사람들 idx
+
+
+아이디 찾기			MSG_IDSEARCH
+int type			9
+int sender			NULL
+int etc				my_sock_info
+int room_idx			NULL
+int msg_size			64
+char* content_send_buffer	찾을사람정보(이름32byte+번호32byte)
+
+
+비밀번호 찾기			MSG_PWSEARCH
+int type			10
+int sender			NULL
+int etc				my_sock_info
+int room_idx			NULL
+int msg_size			64
+char* content_send_buffer	찾을사람정보(id32byte+이름32byte)
+
+
+아이디 중복확인			MSG_IDDUPLICATE
+int type			11
+int sender			NULL
+int etc				my_sock_info
+int room_idx			NULL
+int msg_size			32
+char* content_send_buffer	확인할 id
+
+
+비밀번호 재설정			MSG_PWRESET
+int type			12
+int sender			my_index
+int etc				NULL
+int room_idx			NULL
+int msg_size			64
+char* content_send_buffer	비밀번호32byte+비밀번호재확인32byte
+
+
+인증키 요청			MSG_AUTHREQUEST
+int type			13
+int sender			my_sock_info
+int etc				NULL
+int room_idx			NULL
+int msg_size			64
+char* content_send_buffer	비밀번호32byte+비밀번호재확인32byte
+
+
+인증키 확인			MSG_AUTHCHECK
+int type			14
+int sender			NULL
+int etc				my_sock_info
+int room_idx			NULL
+int msg_size			68
+char* content_send_buffer	아이디32byte+인증키32byte+인증타입4byte
